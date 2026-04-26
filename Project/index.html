@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United States Antarctic Program</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <div class="logo-area">
+                <img src="Images/aparis.jpg" class="logo" alt="USAP Logo">
+                <div class="title">
+                    <h1 data-key="us">United States</h1>
+                    <h2 data-key="ap">Antarctic Program</h2>
+                </div>
+            </div>
+
+            <div class="lang-container">
+                <button class="lang-btn" aria-haspopup="true" aria-expanded="false">Language / Bahasa ▼</button>
+                <div class="lang-dropdown">
+                    <a href="#" onclick="changeLanguage('en')">English</a>
+                    <a href="#" onclick="changeLanguage('id')">Indonesia</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-bar">
+            <nav class="main-nav">
+                <a href="#" class="active" data-key="nav_home">Home</a>
+                <a href="#" data-key="nav_contact">Contact Us</a>
+                <a href="#" data-key="nav_times">Station Times</a>
+                <a href="#" class="quick" data-key="nav_quick">Quick Links</a>
+            </nav>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button onclick="doSearch()" data-key="btn_search">Advanced Search</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <img src="Images/aparis.jpg" class="hero-bg" alt="Antarctica Header">
+        <div class="welcome" data-key="welcome_msg">Welcome to the United States Antarctic Program Portal</div>
+    </section>
+
+    <main>
+        <aside class="sidebar">
+            <div class="future-card">
+                <h3 data-key="future_usap">FUTURE USAP</h3>
+                <p data-key="future_desc">The latest information on the USAP master plans and their implementation.</p>
+            </div>
+
+            <h4 data-key="about_header">About the USAP</h4>
+            <ul>
+                <li><a href="#" data-key="link_program">About the Program</a></li>
+                <li><a href="#" data-key="link_participants">About USAP Participants</a></li>
+                <li><a href="#" data-key="link_env">Environmental Policy and Compliance</a></li>
+                <li><a href="#" data-key="link_faq">FAQs</a></li>
+            </ul>
+        </aside>
+
+        <section class="content">
+            <div class="news-list">
+                <div class="news-card">
+                    <img src="Images/parisa.jpg" alt="Antarctic Station">
+                    <div class="news-text">
+                        <h2 data-key="news_title">NPR Host Gets Tips from Antarctica for How to Stay Warm During the Bomb Cyclone</h2>
+                        <span class="date" data-key="news_date">News | Friday January 5, 2018</span>
+                        <p data-key="news_content">The "bomb cyclone" has hit the eastern U.S causing flight cancellations and power outages. On Jan. 5, Keri Nelson discussed survival tips with host Ari Shapiro...</p>
+                        <a href="#" data-key="read_more">Continue Reading</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="Images/parisa.jpg" alt="Antarctic Station">
+                    <div class="news-text">
+                        <h2 data-key="news_title">NPR Host Gets Tips from Antarctica for How to Stay Warm During the Bomb Cyclone</h2>
+                        <span class="date" data-key="news_date">News | Friday January 5, 2018</span>
+                        <p data-key="news_content">The "bomb cyclone" has hit the eastern U.S causing flight cancellations and power outages. On Jan. 5, Keri Nelson discussed survival tips with host Ari Shapiro...</p>
+                        <a href="#" data-key="read_more">Continue Reading</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer data-key="footer_text">Future USAP | About the USAP | FAQs</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
